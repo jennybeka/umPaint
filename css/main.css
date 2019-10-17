@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+canvas {
+    border : solid 1px;
+}
+.content {
+    width: 100px;
+}
+.content div {
+    background-color: black;
+}
+.content div:hover {
+    border: solid rgb(157, 209, 14) 1px;
+}
+.content img:hover {
+    border: solid red 1px;
+}
+.content div.quadrado{
+    border: solid rgb(8, 8, 8) 1px;
+    width:45px;
+    height: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: white;
+}
+.content div.quadrado:hover{
+    border: solid rgb(231, 6, 6) 1px;
+}
+
+.content div.circle{
+    border: solid rgb(8, 8, 8) 1px;
+    width:45px;
+    height: 25px;
+    text-align: center;
+    background-color: white;
+}
+.content div.circle:hover{
+    border: solid rgb(231, 6, 6) 1px;
+}
+#guardarimg {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+
+
+

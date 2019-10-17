@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel= "stylesheet" type="text/css" href="css/main.css">
+    <style type="text/css">
+		canvas {
+            cursor : url('imgPaint/lapizcursor.gif'), default;
+        }
+    </style>
+    <title>Canvas</title>
+    
+</head>
+<body>
+    <table>
+        <tr>
+            <td>    
+                <canvas width="500" height="500" id="canvas" onmousemove="pintar(event);" onmousedown="ativar(event);" onmouseup="desenharFormas();">
+                </canvas>
+            </td>
+           
+            <td class="content">
+                <a href="#" onclick="lapis();"><img src="imgPaint/lapiz.png" height="30px"/></a>
+                <a href="#" onclick="borracha();"><img src="imgPaint/borracha.png" height="30px"/></a>
+                <div class="caixa"style="width:6px; height:8px;" onclick="stamanho(5);"></div><br/>
+                <div class="caixa"style="width:10px; height:10px;" onclick="stamanho(10);"></div><br/>
+                <div class="caixa"style="width:15px; height:20px;" onclick="stamanho(15);"></div><br/>
+                <div class="caixa"style="width:20px; height:25px;" onclick="stamanho(20);"></div><br/>
+                <div class="quadrado" onclick="desQuadrado();">Square</div>
+                <div class="circle" onclick="desCircle();">Circle</div>
+                Selecione uma Cor:<input type="color" name="color" value="#ff0000" id="selectColor" style="width:20px;" onchange="scolor();"/>
+                
+                <a href="#" id="guardarimg" >Guardar sua Imagem</a>
+            </td>
+        </tr>
+    </table>
+    <button type="button" id="novoDoc">New</button>
+
+    <script src="js/novo.js"></script>
+</body>
+</html>
+
